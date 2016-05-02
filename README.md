@@ -18,7 +18,7 @@ $ cd dist/kubeek/
 $ ./kubeek_start.sh
 ```
 
-![alt tag](http://www.kubeek.com/fr/wp-content/uploads/2012/11/gallery_MG_7209.png)
+![alt tag](https://cdn-shop.adafruit.com/1200x900/2345-06.jpg)
 
 #Architecture
 
