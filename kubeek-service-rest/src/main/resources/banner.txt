@@ -1,0 +1,8 @@
+${AnsiColor.MAGENTA} __        ___.                  __
+${AnsiColor.MAGENTA}|  | ____ _\_ |__   ____   ____ |  | __
+${AnsiColor.MAGENTA}|  |/ /  |  \ __ \_/ __ \_/ __ \|  |/ /
+${AnsiColor.MAGENTA}|    <|  |  / \_\ \  ___/\  ___/|    <
+${AnsiColor.MAGENTA}|__|_ \____/|___  /\___  >\___  >__|_ \
+${AnsiColor.MAGENTA}     \/         \/     \/     \/     \/
+
+${AnsiColor.BRIGHT_GREEN}				http://www.kubeek.com

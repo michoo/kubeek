@@ -1,0 +1,8 @@
+server:
+  port: 8443
+
+  ssl:
+    key-store: server/repository/key/keystore.p12
+    key-store-password:
+    keyStoreType: PKCS12
+    keyAlias: kubeek-server

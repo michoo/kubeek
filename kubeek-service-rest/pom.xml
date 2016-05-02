@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>kubeek-service-rest</artifactId>
+	<packaging>jar</packaging>
+
+	<name>kubeek-service-rest</name>
+	<description>Demo project for kubeek in rest service</description>
+
+	<parent>
+		<groupId>com.kubeek</groupId>
+		<artifactId>kubeek_project</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+        <myversion>${project.parent.version}</myversion>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.kubeek</groupId>
+			<artifactId>kubeek-sdk</artifactId>
+            <version>0.0</version>
+		</dependency>
+        <dependency>
+            <groupId>com.kubeek</groupId>
+            <artifactId>kubeek-ledscreen-k3screen</artifactId>
+            <version>${myversion}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kubeek</groupId>
+            <artifactId>kubeek-ledscreen-k2screen</artifactId>
+            <version>${myversion}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kubeek</groupId>
+            <artifactId>kubeek-ledscreen-ksimulatorscreen</artifactId>
+            <version>${myversion}</version>
+        </dependency>
+		<dependency>
+			<groupId>com.kubeek</groupId>
+			<artifactId>kubeek-core</artifactId>
+			<version>${myversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+		</dependency>
+
+
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<!-- executable jar - helpful for services on linux-->
+					<executable>true</executable>
+					<!-- to load jar from app/ folder-->
+					<layout>ZIP</layout>
+					<!--
+                    Enable the line below to have remote debugging of your application on port 5005
+                    <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments>
+                    -->
+					<!--<arguments>-->
+						<!--<argument>&#45;&#45;spring.profiles.active=dev</argument>-->
+					<!--</arguments>-->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+</project>
