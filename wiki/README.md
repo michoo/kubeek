@@ -150,7 +150,7 @@ $ ./build
 ####Installing Oracle jdk 8
 
 ```
-$ sudo apt-get install oracle-java8-installer
+$ sudo apt-get install oracle-java8-jdk
 $ sudo update-alternatives --config java
 ```
 
